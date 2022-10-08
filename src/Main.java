@@ -46,7 +46,7 @@ public class Main {
                                int choice=0;
                                do {
                                    System.out.println("\n ***Welcome "+C[i].fullname+" *** Balance "+C[i].balance+"DH***");
-                                   System.out.println("1. Deposit the amount \n 2. Withdraw the amount\n 3. Show Account Details\n 4. Change Pin\n 5. Download Your Data \n 6.Logout ");
+                                   System.out.println("\n 1. Deposit the amount \n 2. Withdraw the amount\n 3. Show Account Details\n 4. Change Pin\n 5. Download Your Data\n 6. Send Money \n 7.Logout ");
                                    System.out.println("Enter your choice: ");
                                    choice = sc.nextInt();
                                    switch (choice){
@@ -73,8 +73,36 @@ public class Main {
                                            C[i].DownloadData();
                                            System.out.println("Back To Menu ....");
                                            break;
+                                       case 6:
+                                           boolean ex=false;
+                                           int j;
+                                           do{
+                                               System.out.print("Enter The receiver email : ");
+                                               String receiver = sc.nextLine();
+                                               for (j=0;j<C.length;j++){
+                                                   System.out.println(C[j].email);
+                                                   if (C[j].email.equals(receiver)){
+                                                        ex=true;
+                                                        break;
+                                                   }
+                                               }
+
+                                           }while (!ex);
+                                           boolean less=false;
+                                           Double moneysent;
+                                           do {
+                                               System.out.print("Enter The ammount to send to "+C[j].fullname+" must be less then your balance |"+C[i].balance+"DH|: ");
+                                                moneysent = sc.nextDouble();
+                                                if(moneysent < C[i].balance){
+                                                    less =true;
+                                                    break;
+                                                }
+                                           }while (!less);
+                                             C[i].balance-=moneysent;
+                                             C[j].balance+=moneysent;
+                                             System.out.println(moneysent+"Dh sent to "+C[j].fullname);
                                    }
-                               }while (choice != 6);
+                               }while (choice != 7);
                            }
                        }
                        if(exist == false){
