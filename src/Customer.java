@@ -1,9 +1,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 class Customer{
     static  int cmp=0;
@@ -12,6 +9,7 @@ class Customer{
     Date creation_date;
     String phone;
     String email;
+    long rib;
     Date last_update;
     double balance=0;
     HashMap<Double, Date> transactions = new HashMap<Double, Date>();
@@ -19,6 +17,13 @@ class Customer{
     Customer() throws IOException {
         cmp++;
         this.id=cmp;
+        Random rand = new Random();
+        long accumalor = 1 + rand.nextInt(9);
+        for(int i=0;i<15;i++){
+            accumalor *= 10L;
+            accumalor += rand.nextInt(10);
+        }
+        this.rib=accumalor;
         System.out.print("Enter Your Name : ");
         Scanner sa=new Scanner(System.in);
         this.fullname = sa.nextLine();
@@ -52,7 +57,7 @@ class Customer{
     }
     void ShowDetail() throws IOException{
         System.out.println("Id : "+this.id+"\nName : "+this.fullname+"\nBalance : "+this.balance+"DH\nEmail : "+this.email+"\nPhone : "+this.phone+
-                "\nCreation_Date: "+this.creation_date+"\nLast update : "+this.last_update);
+                "\nCreation_Date: "+this.creation_date+"\nLast update : "+this.last_update+"\nCredit Card Number : "+this.rib);
     }
     void Deposit(Double deposit){
         this.balance+=deposit;
