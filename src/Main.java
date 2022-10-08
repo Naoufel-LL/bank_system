@@ -80,7 +80,6 @@ public class Main {
                                                System.out.print("Enter The receiver email : ");
                                                String receiver = sc.nextLine();
                                                for (j=0;j<C.length;j++){
-                                                   System.out.println(C[j].email);
                                                    if (C[j].email.equals(receiver)){
                                                         ex=true;
                                                         break;
@@ -98,6 +97,16 @@ public class Main {
                                                     break;
                                                 }
                                            }while (!less);
+                                             boolean confirmation=false;
+                                             int pn=0;
+                                             do{
+                                                 System.out.print("Enter your pin to confirm : ");
+                                                 pn=sc.nextInt();
+                                                 if(C[i].pin == pn){
+                                                     confirmation = true;
+                                                     break;
+                                                 }
+                                             }while (!confirmation);
                                              C[i].balance-=moneysent;
                                              C[j].balance+=moneysent;
                                              System.out.println(moneysent+"Dh sent to "+C[j].fullname);
