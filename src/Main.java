@@ -45,8 +45,8 @@ public class Main {
                                exist = true;
                                int choice=0;
                                do {
-                                   System.out.println("\n ***Banking System Application***");
-                                   System.out.println("\n1. Deposit the amount \n 2. Withdraw the amount\n 3. Show Account Details\n 4. Change Pin\n 5. Download Your Data \n 6.Exit ");
+                                   System.out.println("\n ***Welcome "+C[i].fullname+" ***");
+                                   System.out.println("1. Deposit the amount \n 2. Withdraw the amount\n 3. Show Account Details\n 4. Change Pin\n 5. Download Your Data \n 6.Exit ");
                                    System.out.println("Enter your choice: ");
                                    choice = sc.nextInt();
                                    switch (choice){
