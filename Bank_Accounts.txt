@@ -1,21 +1,16 @@
 Id : 1
-Name : dzadza
-Balance : 49556.0DH
-Creation_Date: Fri Oct 07 22:52:03 GMT 2022
-Last update : Fri Oct 07 22:54:22 GMT 2022
+Name : adzdz
+Balance : 900.0DH
+Creation_Date: Sat Oct 08 00:57:12 GMT 2022
+Last update : Sat Oct 08 00:57:41 GMT 2022
 Last Transactions : 
--144.0Dh | Date of Transaction : Fri Oct 07 22:52:51 GMT 2022
-+1444.0Dh | Date of Transaction : Fri Oct 07 22:54:17 GMT 2022
--788.0Dh | Date of Transaction : Fri Oct 07 22:54:22 GMT 2022
-+100.0Dh | Date of Transaction : Fri Oct 07 22:52:40 GMT 2022
--400.0Dh | Date of Transaction : Fri Oct 07 22:52:53 GMT 2022
--111.0Dh | Date of Transaction : Fri Oct 07 22:52:59 GMT 2022
-+55.0Dh | Date of Transaction : Fri Oct 07 22:54:19 GMT 2022
-+2000.0Dh | Date of Transaction : Fri Oct 07 22:52:44 GMT 2022
-+511.0Dh | Date of Transaction : Fri Oct 07 22:52:48 GMT 2022
+-100.0Dh | Date of Transaction : Sat Oct 08 00:57:41 GMT 2022
++1000.0Dh | Date of Transaction : Sat Oct 08 00:57:27 GMT 2022
 Id : 2
-Name : naoufel
-Balance : 1000.0DH
-Creation_Date: Fri Oct 07 22:52:29 GMT 2022
-Last update : Fri Oct 07 22:52:29 GMT 2022
+Name : zad
+Balance : 1460.0DH
+Creation_Date: Sat Oct 08 00:58:19 GMT 2022
+Last update : Sat Oct 08 00:58:46 GMT 2022
 Last Transactions : 
+-140.0Dh | Date of Transaction : Sat Oct 08 00:58:46 GMT 2022
++1500.0Dh | Date of Transaction : Sat Oct 08 00:58:40 GMT 2022
