@@ -1,7 +1,7 @@
 # bank_system <br>
 Bank System with Java OOP<br>
 User Details:<br>
-Name/Phone/Email/Balance/Creation_Date(automatic)/LastUpdate(automatic)/LastTransactions(Ammount+Date)<br>
+Name/Phone/Email/Balance/Credit card number(generated)/Creation_Date(automatic)/LastUpdate(automatic)/LastTransactions(Ammount+Date)<br>
 You can Initialise an array then fill it with users (static allocation).<br>
 Then you go to general menu when you can : <br>
 1-Register (New User)<br>
@@ -16,6 +16,7 @@ When You log into an account you can :
 3. Show Account Details
 4. Change Pin
 5. Download Your Data (txt file)
-6.Exit
+6. Send Money (between 2 account)
+7.Exit
 <br>
 Made By Naoufel Bahassoune 7/10/2002
